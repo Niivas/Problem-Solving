@@ -8,8 +8,8 @@ class Solution:
             if s[right] in map_:
                 # If the current character is already in the hash map, we have found a repeated character
                 if map_[s[right]] >= left:
-                # If the index of the repeated character is greater than or equal to the left pointer,
-        # it means that this repeated character is in the current substring, and we need to update the left pointer
+                    # If the index of the repeated character is greater than or equal to the left pointer,
+                    # it means that this repeated character is in the current substring, and we need to update the left pointer
                     maxLength = max(maxLength, right - left + 1)
                     # Update the max length of substring found so far
                     left = map_[s[right]] + 1
