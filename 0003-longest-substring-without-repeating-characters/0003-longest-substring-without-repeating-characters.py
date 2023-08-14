@@ -1,5 +1,4 @@
 class Solution:
-    @staticmethod
     def lengthOfLongestSubstring(s: str) -> int:
         left, right, n, maxLength, map_ = 0, 0, len(s), 0, {}
         # Initialize variables for left and right pointers, length of input string, max length of substring, and a hash map
