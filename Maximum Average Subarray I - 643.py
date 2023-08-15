@@ -1,7 +1,6 @@
 from typing import List
 
 class Solution:
-    @staticmethod
     def findMaxAverage(nums: List[int], k: int) -> float:
         # Initialize the current sum as the sum of the first (k-1) elements
         curSum = sum(nums[:k-1])
