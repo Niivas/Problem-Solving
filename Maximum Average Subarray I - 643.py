@@ -1,9 +1,9 @@
 from typing import List
 
 class Solution:
-    def findMaxAverage(self: List[int], k: int) -> float:
+    def findMaxAverage(nums: List[int], k: int) -> float:
         # Initialize the current sum as the sum of the first (k-1) elements
-        curSum = sum(self[:k - 1])
+        curSum = sum(nums[:k-1])
 
         # Initialize pointers for the left and right boundaries of the subarray
         left, right = 0, k - 1
@@ -12,16 +12,16 @@ class Solution:
         maxSum = -float('inf')
 
         # Iterate through the array while the right boundary is within bounds
-        while right < len(self):
+        while right < len(nums):
             # Add the current element to the current sum
-            curSum += self[right]
+            curSum += nums[right]
 
             # Update the maximum sum if the current sum is greater
             if curSum > maxSum:
                 maxSum = curSum
 
             # Subtract the leftmost element from the current sum
-            curSum -= self[left]
+            curSum -= nums[left]
 
             # Move the left and right boundaries one step to the right
             left += 1
