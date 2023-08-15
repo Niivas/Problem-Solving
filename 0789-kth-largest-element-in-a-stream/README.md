@@ -3,7 +3,7 @@
 <p>Implement <code>KthLargest</code> class:</p>
 
 <ul>
-	<li><code>KthLargest(int k, int[] nums)</code> Initializes the object with the integer <code>k</code> and the stream of integers <code>nums</code>.</li>
+	<li><code>KthLargest(int k, int[] self)</code> Initializes the object with the integer <code>k</code> and the stream of integers <code>self</code>.</li>
 	<li><code>int add(int val)</code> Appends the integer <code>val</code> to the stream and returns the element representing the <code>k<sup>th</sup></code> largest element in the stream.</li>
 </ul>
 
@@ -31,8 +31,8 @@ kthLargest.add(4);   // return 8
 
 <ul>
 	<li><code>1 &lt;= k &lt;= 10<sup>4</sup></code></li>
-	<li><code>0 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
+	<li><code>0 &lt;= self.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>-10<sup>4</sup> &lt;= self[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>-10<sup>4</sup> &lt;= val &lt;= 10<sup>4</sup></code></li>
 	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>add</code>.</li>
 	<li>It is guaranteed that there will be at least <code>k</code> elements in the array when you search for the <code>k<sup>th</sup></code> element.</li>
