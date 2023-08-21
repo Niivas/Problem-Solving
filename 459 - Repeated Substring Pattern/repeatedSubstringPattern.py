@@ -19,4 +19,4 @@ class Solution:
 
         # Check if the input string can be formed by repeating a substring.
         # This is determined by the last value in the DP list and the length of the input string.
-        return dp[n] > 0 and dp[n] % (n - dp[n]) == 0
+        return (dp[n] > 0 and dp[n] % (n - dp[n]) == 0)
