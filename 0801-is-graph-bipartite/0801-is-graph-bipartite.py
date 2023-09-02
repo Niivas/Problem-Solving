@@ -1,3 +1,7 @@
+from collections import deque
+from typing import List
+
+
 class Solution:
     def isBipartite(self, graph: List[List[int]]) -> bool:
         num_nodes = len(graph)
