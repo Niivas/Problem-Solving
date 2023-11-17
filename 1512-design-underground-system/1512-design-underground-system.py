@@ -11,7 +11,7 @@ class UndergroundSystem:
     def checkOut(self, id: int, stationName: str, t: int) -> None:
         checkIn = self.checkInMap.pop(id)  # Pop after using it which will not make HashTable big
         routeName = (checkIn[0], stationName)
-        
+
         self.routeTotalTime[routeName] += t - checkIn[1]
         self.routeCount[routeName] += 1
 

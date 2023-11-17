@@ -6,11 +6,11 @@ class Solution:
         # Initialize the grid with all cells set to 0
         grid = [[0] * col for _ in range(row)]
         queue = collections.deque()
-        
+
         # Mark the cells as blocked for the given day
         for r, c in cells[:day]:
             grid[r - 1][c - 1] = 1
-            
+
         # Enqueue the cells in the first row that are not blocked
         for i in range(col):
             if not grid[0][i]:
@@ -27,13 +27,13 @@ class Solution:
                 if 0 <= nr < row and 0 <= nc < col and grid[nr][nc] == 0:
                     grid[nr][nc] = -1
                     queue.append((nr, nc))
-                    
+
         return False
-    
-    
+
+
     def latestDayToCross(self, row: int, col: int, cells: List[List[int]]) -> int:
         left, right = 1, row * col
-        
+
         # Perform binary search
         while left < right:
             mid = right - (right - left) // 2
@@ -41,5 +41,5 @@ class Solution:
                 left = mid
             else:
                 right = mid - 1
-                
+
         return left

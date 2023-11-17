@@ -23,7 +23,7 @@ class Solution:
                 graph[cur_node.right.val].append(cur_node.val)
                 # Add the right child to the queue for further traversal
                 queue.append(cur_node.right)
-        
+
         # Perform BFS starting from the target node to find nodes at distance k
         queue.append((target.val, k))
         # Create a set to track visited nodes
@@ -42,6 +42,6 @@ class Solution:
                     # Add neighbors of the current node to the queue for further traversal
                     queue.append((node, dist - 1))
                     visited.add(node)
-        
+
         # Return the list of nodes at distance k
         return ans

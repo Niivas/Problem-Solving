@@ -19,11 +19,11 @@ class Solution:
 
             if (index, time_painted) in visited:
                 return visited[(index, time_painted)]
-            
+
             visited[(index, time_painted)] = min(
                 dp(index + 1, time_painted - 1),
                 cost[index] + dp(index + 1,
                 time_painted + time[index]))
             return visited[(index, time_painted)]
-        
+
         return dp(0, 0)

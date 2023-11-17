@@ -4,7 +4,7 @@ class Solution:
 
         for i,groupLen in enumerate(groupSizes):
             groupMap[groupLen].append(i)
-        
+
         res = []
 
         for groupLen,persons in groupMap.items():

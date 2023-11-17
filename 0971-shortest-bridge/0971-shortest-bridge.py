@@ -36,4 +36,3 @@ class Solution:
                                 new.append((x,y))
                 step += 1
                 bound = new
-            
