@@ -1,13 +1,13 @@
 class Solution:
         def minCostConnectPoints(self, p: List[List[int]]) -> int:
-        
+
             def manhattan(x, y):
                 return abs(x[0]-y[0]) + abs(x[1]-y[1])
-            
+
             ans, n = 0, len(p)
             seen = set()
             vertices = [(0, (0, 0))]
-            
+
             while len(seen) < n:
                 # print(vertices, seen)
                 w, (u, v) = heapq.heappop(vertices)            

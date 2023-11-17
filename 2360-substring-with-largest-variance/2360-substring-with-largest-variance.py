@@ -3,7 +3,7 @@ class Solution:
         count1 = 0
         count2 = 0
         max_variance = 0
-        
+
         # create distinct list of character pairs
         pairs = [(l1, l2) for l1 in set(s) for l2 in set(s) if l1 != l2]
 
@@ -23,9 +23,9 @@ class Solution:
                         count1 = count2 = 0
                     elif count1 > 0 and count2 > 0:
                         max_variance = max(max_variance, count1 - count2)
-                
-            
+
+
             # reverse the string for the second time around
             s = s[::-1]
-                
+
         return max_variance

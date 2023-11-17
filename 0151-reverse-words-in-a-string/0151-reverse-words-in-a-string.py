@@ -5,6 +5,6 @@ class Solution:
 
         # Reverse the order of words
         s = s[::-1]
-        
+
         # Join the reversed words with whitespace and return the result
         return " ".join(s)

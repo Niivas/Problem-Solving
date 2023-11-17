@@ -5,4 +5,3 @@ class Solution:
             for i in range(row, -1, -1):
                 res[i] = max(res[i] - 1, 0) / 2.0 + max(res[i - 1] - 1, 0) / 2.0
         return min(res[query_glass], 1)
-        

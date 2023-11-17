@@ -24,7 +24,7 @@ class Graph:
                     dist[neighbor] = d + cost
                     heapq.heappush(pq, (dist[neighbor], neighbor))
         return -1
-    
+
 
 
 # Your Graph object will be instantiated and called as such:

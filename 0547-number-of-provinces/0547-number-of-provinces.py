@@ -11,10 +11,10 @@ class Solution:
                 if isConnected[i][j] == 1:
                     graph[i+1].add(j+1)
                     graph[j+1].add(i+1)
-        
+
         # Step 2: Initialize variables
         count, visited = 0, set()
-        
+
         # Step 3-5: Perform BFS for each unvisited vertex
         for key in graph:
             if key in visited:
@@ -29,6 +29,6 @@ class Solution:
                     if neighbour not in visited:
                         queue.append(neighbour)
             count += 1
-        
+
         # Step 6: Return the final count
         return count

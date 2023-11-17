@@ -28,4 +28,3 @@ class Solution:
         indegree = [0] * n
         self.helper(0, requests, indegree, n, 0)
         return self.max_requests
-        

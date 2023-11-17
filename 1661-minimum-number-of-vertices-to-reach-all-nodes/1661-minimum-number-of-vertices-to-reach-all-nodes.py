@@ -9,6 +9,6 @@ class Solution:
             if i[1] in vertices:
                 # Remove it from the set
                 vertices.remove(i[1])
-        
+
         # Convert the set of vertices to a list and return
         return list(vertices)

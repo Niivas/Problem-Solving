@@ -16,10 +16,10 @@ class Solution:
             inorder(node.left)
             freq[node.val] = freq.get(node.val, 0) + 1
             inorder(node.right)
-        
+
         # 3. Traverse the tree in-order
         inorder(root)
-        
+
         # 4. Find the mode(s)
         max_freq = max(freq.values())
         return [k for k, v in freq.items() if v == max_freq]
