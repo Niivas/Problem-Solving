@@ -1,5 +1,6 @@
 class Solution:
-    def getRow(self, rowIndex: int) -> List[int]:
+    @staticmethod
+    def getRow(rowIndex: int) -> List[int]:
         numRows = rowIndex+1       
         # initialize dp with first two rows of Pascal's Triangle
         if rowIndex == 0:

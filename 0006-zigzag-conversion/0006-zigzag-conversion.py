@@ -1,5 +1,6 @@
 class Solution:
-    def convert(self, s: str, numrows: int) -> str:
+    @staticmethod
+    def convert(s: str, numrows: int) -> str:
         if numrows == 1:
             return s
 

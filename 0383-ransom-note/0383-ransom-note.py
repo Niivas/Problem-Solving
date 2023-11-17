@@ -1,5 +1,6 @@
 class Solution:
-    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+    @staticmethod
+    def canConstruct(ransomNote: str, magazine: str) -> bool:
         # Create a counter of the characters in the ransom note
         r_counter = Counter(ransomNote)
         

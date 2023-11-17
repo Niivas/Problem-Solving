@@ -1,5 +1,6 @@
 class Solution:
-    def reverseWords(self, s: str) -> str:
+    @staticmethod
+    def reverseWords(s: str) -> str:
         # Split the string into words using whitespace as the delimiter
         s = s.split()
 

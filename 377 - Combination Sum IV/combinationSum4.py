@@ -1,5 +1,6 @@
 class Solution:
-    def combinationSum4(self, nums, target):
+    @staticmethod
+    def combinationSum4(nums, target):
         # Sort the inputs list 'nums' in ascending order.
         nums.sort()
 

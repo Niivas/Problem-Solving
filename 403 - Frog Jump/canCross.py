@@ -1,5 +1,6 @@
 class Solution(object):
-    def canCross(self, stones):
+    @staticmethod
+    def canCross(stones):
         stone_set, fail = set(stones), set()
         stack = [(0, 0)]
         while stack:

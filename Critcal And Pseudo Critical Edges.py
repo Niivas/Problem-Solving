@@ -41,7 +41,8 @@ class UnionFindSet:
         return True
 
 class Solution:
-    def findCriticalAndPseudoCriticalEdges(self, n: int, edges: List[List[int]]) -> list[set[Any]]:
+    @staticmethod
+    def findCriticalAndPseudoCriticalEdges(n: int, edges: List[List[int]]) -> list[set[Any]]:
         # Function to perform DFS to mark critical and pseudo-critical edges.
         def dfs(curr, level, parent):
             levels[curr] = level  # Set the level of the current node.

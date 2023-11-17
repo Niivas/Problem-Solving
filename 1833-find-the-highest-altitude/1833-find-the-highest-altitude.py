@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def largestAltitude(self, gain: List[int]) -> int:
+    @staticmethod
+    def largestAltitude(gain: List[int]) -> int:
         max_altitude = 0  # Stores the largest altitude reached
         current_altitude = 0  # Stores the current cumulative gain
 

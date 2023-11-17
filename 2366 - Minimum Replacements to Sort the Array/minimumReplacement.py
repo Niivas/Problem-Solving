@@ -2,7 +2,8 @@ import math
 from typing import List
 
 class Solution:
-    def minimumReplacement(self, nums: List[int]) -> int:
+    @staticmethod
+    def minimumReplacement(nums: List[int]) -> int:
         # Get the length of the input list 'nums'
         n = len(nums)
 

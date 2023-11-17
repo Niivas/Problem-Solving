@@ -1,5 +1,6 @@
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
+    @staticmethod
+    def longestPalindrome(s: str) -> str:
         
         def expand(string, start, end):
             temp = ""

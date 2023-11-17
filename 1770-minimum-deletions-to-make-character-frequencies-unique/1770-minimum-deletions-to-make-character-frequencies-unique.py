@@ -1,5 +1,6 @@
 class Solution:
-    def minDeletions(self, s: str) -> int:
+    @staticmethod
+    def minDeletions(s: str) -> int:
         # Initialize an array to count the frequency of each lowercase alphabet character
         charArray = [0] * 26
 

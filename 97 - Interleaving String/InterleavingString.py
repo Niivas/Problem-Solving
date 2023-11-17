@@ -1,5 +1,6 @@
 class Solution:
-    def isInterleave(self, s1, s2, s3):
+    @staticmethod
+    def isInterleave(s1, s2, s3):
         # Get the lengths of the input strings
         r, c, l = len(s1), len(s2), len(s3)
 

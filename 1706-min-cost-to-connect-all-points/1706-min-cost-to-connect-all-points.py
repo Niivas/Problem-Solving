@@ -1,5 +1,6 @@
 class Solution:
-        def minCostConnectPoints(self, p: List[List[int]]) -> int:
+        @staticmethod
+        def minCostConnectPoints(p: List[List[int]]) -> int:
         
             def manhattan(x, y):
                 return abs(x[0]-y[0]) + abs(x[1]-y[1])

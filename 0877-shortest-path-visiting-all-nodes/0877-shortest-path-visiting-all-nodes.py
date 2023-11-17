@@ -47,5 +47,6 @@ class Solution:
         
         return 1221  # magic - LOL
     
-    def setbit(self, mask, i):
+    @staticmethod
+    def setbit(mask, i):
         return mask | (1 << i)

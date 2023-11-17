@@ -1,5 +1,6 @@
 class Solution:
-    def minCost(self, n: int, cuts: List[int]) -> int:
+    @staticmethod
+    def minCost(n: int, cuts: List[int]) -> int:
         @lru_cache(maxsize=None)
         def dp(i, j):
             if j<=i+1:

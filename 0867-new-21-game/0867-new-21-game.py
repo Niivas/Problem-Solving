@@ -1,5 +1,6 @@
 class Solution:
-    def new21Game(self, N: int, K: int, maxPts: int) -> float:
+    @staticmethod
+    def new21Game(N: int, K: int, maxPts: int) -> float:
         # Check if winning is guaranteed
         if K == 0 or N >= K + maxPts:
             return 1.0

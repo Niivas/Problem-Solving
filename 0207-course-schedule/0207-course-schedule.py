@@ -1,5 +1,6 @@
 class Solution:
-    def canFinish(self, num_courses: int, prerequisites: List[List[int]]) -> bool:
+    @staticmethod
+    def canFinish(num_courses: int, prerequisites: List[List[int]]) -> bool:
         # Initialize adjacency list to represent courses and their dependencies
         adjacency_list = [[] for _ in range(num_courses)]
         # Initialize indegree list to keep track of prerequisites count for each course

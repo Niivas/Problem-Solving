@@ -1,5 +1,6 @@
 class Solution:
-    def isReachableAtTime(self, sx: int, sy: int, fx: int, fy: int, t: int) -> bool:
+    @staticmethod
+    def isReachableAtTime(sx: int, sy: int, fx: int, fy: int, t: int) -> bool:
         x_distance = abs(sx-fx)
         y_distance = abs(sy-fy)
         min_dist = min(x_distance,y_distance) + abs(y_distance - x_distance)

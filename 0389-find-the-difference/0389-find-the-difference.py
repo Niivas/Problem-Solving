@@ -1,5 +1,6 @@
 class Solution:
-    def findTheDifference(self, s: str, t: str) -> str:
+    @staticmethod
+    def findTheDifference(s: str, t: str) -> str:
         c1 = Counter(s)
         c2 = Counter(t)
 

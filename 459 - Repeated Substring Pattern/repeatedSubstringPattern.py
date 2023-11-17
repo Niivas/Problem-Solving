@@ -1,5 +1,6 @@
 class Solution:
-    def repeatedSubstringPattern(self,s: str) -> bool:
+    @staticmethod
+    def repeatedSubstringPattern(s: str) -> bool:
         i, j = 1, 0
         n = len(s)
 

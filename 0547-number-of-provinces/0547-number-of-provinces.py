@@ -2,7 +2,8 @@ from collections import defaultdict, deque
 from typing import List
 
 class Solution:
-    def findCircleNum(self, isConnected: List[List[int]]) -> int:
+    @staticmethod
+    def findCircleNum(isConnected: List[List[int]]) -> int:
         # Step 1: Create a dictionary that represents the adjacency list of the graph
         graph = defaultdict(set)
         n = len(isConnected)

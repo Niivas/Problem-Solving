@@ -2,7 +2,8 @@ from collections import deque, defaultdict
 from typing import List
 
 class Solution:
-    def distanceK(self, root: TreeNode, target: TreeNode, k: int) -> List[int]:
+    @staticmethod
+    def distanceK(root: TreeNode, target: TreeNode, k: int) -> List[int]:
         # Create a queue to perform BFS traversal of the binary tree
         queue = deque([root])
         # Create a graph to store the connections between nodes

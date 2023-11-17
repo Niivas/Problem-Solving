@@ -1,5 +1,6 @@
 class Solution:
-    def maximumScore(self, nums: List[int], k: int) -> int:
+    @staticmethod
+    def maximumScore(nums: List[int], k: int) -> int:
         
         n = len(nums)
         left, right = k, k

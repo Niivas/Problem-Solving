@@ -1,5 +1,6 @@
 class Solution:
-    def countPaths(self, grid: List[List[int]]) -> int:
+    @staticmethod
+    def countPaths(grid: List[List[int]]) -> int:
         rows = len(grid)
         cols = len(grid[0])
 

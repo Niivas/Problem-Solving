@@ -1,5 +1,6 @@
 class Solution:
-        def shortestBridge(self, A: List[List[int]]) -> int:
+        @staticmethod
+        def shortestBridge(A: List[List[int]]) -> int:
             bound= set()
             dire = [(1,0),(-1,0),(0,1),(0,-1)]
             m, n = len(A), len(A[0])

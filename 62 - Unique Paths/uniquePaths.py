@@ -1,5 +1,6 @@
 class Solution:
-    def uniquePaths(self, m: int, n: int) -> int:
+    @staticmethod
+    def uniquePaths(m: int, n: int) -> int:
         # create a 2D grid of size m x n initialized with zeros
         dp = [[0]*n for _ in range(m)]
 

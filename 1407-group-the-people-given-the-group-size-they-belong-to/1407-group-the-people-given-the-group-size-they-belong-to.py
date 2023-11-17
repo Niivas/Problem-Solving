@@ -1,5 +1,6 @@
 class Solution:
-    def groupThePeople(self, groupSizes: List[int]) -> List[List[int]]:
+    @staticmethod
+    def groupThePeople(groupSizes: List[int]) -> List[List[int]]:
         groupMap = defaultdict(list)
 
         for i,groupLen in enumerate(groupSizes):

@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def minCost(self, nums: List[int], cost: List[int]) -> int:
+    @staticmethod
+    def minCost(nums: List[int], cost: List[int]) -> int:
         # Find the minimum and maximum values in the nums list
         left, right = min(nums), max(nums)
 

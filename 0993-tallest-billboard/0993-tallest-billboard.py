@@ -1,5 +1,6 @@
 class Solution:
-    def tallestBillboard(self, rods: List[int]) -> int:
+    @staticmethod
+    def tallestBillboard(rods: List[int]) -> int:
         # dp[taller - shorter] = taller
         dp = {0:0}
         

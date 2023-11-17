@@ -2,7 +2,8 @@ from collections import defaultdict, deque
 from typing import List
 
 class Solution:
-    def maxProbability(self, num_nodes: int, edges: List[List[int]], success_probabilities: List[float], start_node: int, end_node: int) -> float:
+    @staticmethod
+    def maxProbability(num_nodes: int, edges: List[List[int]], success_probabilities: List[float], start_node: int, end_node: int) -> float:
         # Create an adjacency list representation of the graph
         graph = defaultdict(list)
         num_edges = len(edges)

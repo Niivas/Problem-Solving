@@ -1,5 +1,6 @@
 class Solution:
-    def convertToTitle(self, columnNumber: int) -> str:
+    @staticmethod
+    def convertToTitle(columnNumber: int) -> str:
         ans = ""  # Initialize an empty string to store the resulting column title
 
         while columnNumber:

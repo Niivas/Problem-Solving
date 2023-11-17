@@ -1,6 +1,7 @@
 import collections
 class Solution:
-    def sortItems(self, n, m, group, beforeItems):
+    @staticmethod
+    def sortItems(n, m, group, beforeItems):
 
         # Helper function: returns topological order of a graph, if it exists.
         def get_top_order(graph, indegree):

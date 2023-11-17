@@ -1,6 +1,7 @@
 
 class Solution:
-    def numDecodings(self, s: str) -> int:
+    @staticmethod
+    def numDecodings(s: str) -> int:
         n=len(s)
         @lru_cache(None)
         def dfs(i):
