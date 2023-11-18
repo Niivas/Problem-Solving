@@ -1,5 +1,6 @@
 class Solution:
-    def removeDuplicateLetters(self, s: str) -> str:   
+    @staticmethod
+    def removeDuplicateLetters(s: str) -> str:   
         last_occ = {}
         stack = []
         visited = set()

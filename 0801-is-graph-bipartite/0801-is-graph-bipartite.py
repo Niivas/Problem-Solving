@@ -3,7 +3,8 @@ from typing import List
 
 
 class Solution:
-    def isBipartite(self, graph: List[List[int]]) -> bool:
+    @staticmethod
+    def isBipartite(graph: List[List[int]]) -> bool:
         num_nodes = len(graph)
         color = [0] * num_nodes
 

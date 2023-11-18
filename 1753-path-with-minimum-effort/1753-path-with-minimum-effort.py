@@ -1,5 +1,6 @@
 class Solution(object):
-    def minimumEffortPath(self, heights):
+    @staticmethod
+    def minimumEffortPath(heights):
         m, n = len(heights), len(heights[0])
         dist = [[math.inf] * n for _ in range(m)]
         dist[0][0] = 0

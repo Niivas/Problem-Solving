@@ -2,7 +2,8 @@ from typing import List
 
 
 class Solution:
-    def generate(self, numRows: int) -> List[List[int]]:
+    @staticmethod
+    def generate(numRows: int) -> List[List[int]]:
         # special cases for numRows = 1 or 2
         if numRows == 1:
             return [[1]]

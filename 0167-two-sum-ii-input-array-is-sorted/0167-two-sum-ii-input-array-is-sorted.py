@@ -1,5 +1,6 @@
 class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    @staticmethod
+    def twoSum(numbers: List[int], target: int) -> List[int]:
         # Initialize two pointers, left and right, pointing to the beginning and end of the input list
         left, right = 0, len(numbers) - 1
         

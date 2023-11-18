@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def summaryRanges(self, nums: List[int]) -> List[str]:
+    @staticmethod
+    def summaryRanges(nums: List[int]) -> List[str]:
         if not nums:
             return nums
         result = []  # List to store summary ranges

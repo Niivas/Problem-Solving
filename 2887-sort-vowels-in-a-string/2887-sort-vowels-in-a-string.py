@@ -1,5 +1,6 @@
 class Solution:
-    def sortVowels(self, s: str) -> str:
+    @staticmethod
+    def sortVowels(s: str) -> str:
         s = list(s)
         vowels = set("AEIOU") | set("aeiou")
         toBeSorted = []

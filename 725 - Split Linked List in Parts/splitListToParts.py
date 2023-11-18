@@ -6,7 +6,8 @@ class ListNode:
 
 
 class Solution(object):
-    def splitListToParts(self, root, k):
+    @staticmethod
+    def splitListToParts(root, k):
         # Count the length of the linked list
         curr, length = root, 0
         while curr:

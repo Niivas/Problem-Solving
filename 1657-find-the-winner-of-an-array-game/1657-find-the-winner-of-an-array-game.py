@@ -1,6 +1,7 @@
 from collections import deque
 class Solution:
-    def getWinner(self, arr: List[int], k: int) -> int:
+    @staticmethod
+    def getWinner(arr: List[int], k: int) -> int:
         n = len(arr)
         arr = deque(arr)
         i,j = 0,1

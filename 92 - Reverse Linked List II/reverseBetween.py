@@ -6,7 +6,8 @@ class ListNode:
 
 
 class Solution:
-    def reverseBetween(self, head, m, n):
+    @staticmethod
+    def reverseBetween(head, m, n):
         """
         :type head: ListNode
         :type m: int

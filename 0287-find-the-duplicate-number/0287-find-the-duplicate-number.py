@@ -1,5 +1,6 @@
 class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
+    @staticmethod
+    def findDuplicate(nums: List[int]) -> int:
         if len(nums)>1:
             slow = nums[0]
             fast = nums[slow]

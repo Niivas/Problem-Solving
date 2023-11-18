@@ -1,5 +1,6 @@
 class Solution:
-    def minOperations(self, nums: List[int]) -> int:
+    @staticmethod
+    def minOperations(nums: List[int]) -> int:
         n = len(nums)
         nums = sorted(set(nums))  # Make `nums` as unique numbers and sort `nums`.
 

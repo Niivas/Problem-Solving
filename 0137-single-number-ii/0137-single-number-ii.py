@@ -1,5 +1,6 @@
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    @staticmethod
+    def singleNumber(nums: List[int]) -> int:
         # Initialize the variable to hold the single number
         single_number = 0
 

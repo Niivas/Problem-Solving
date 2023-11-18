@@ -1,5 +1,6 @@
 class Solution:
-    def isIsomorphic(self, s: str, t: str) -> bool:
+    @staticmethod
+    def isIsomorphic(s: str, t: str) -> bool:
         
         mapping_s_t = {}
         mapping_t_s = {}

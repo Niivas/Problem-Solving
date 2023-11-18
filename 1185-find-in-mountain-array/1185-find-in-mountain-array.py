@@ -7,7 +7,8 @@
 #    def length(self) -> int:
 
 class Solution:
-        def findInMountainArray(self, target, A):
+        @staticmethod
+        def findInMountainArray(target, A):
             n = A.length()
             # find index of peak
             l, r = 0, n - 1

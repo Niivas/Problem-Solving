@@ -1,5 +1,6 @@
 class Solution:
-    def numIdenticalPairs(self, nums: List[int]) -> int:
+    @staticmethod
+    def numIdenticalPairs(nums: List[int]) -> int:
         hm = defaultdict(list)
 
         for i,val in enumerate(nums):

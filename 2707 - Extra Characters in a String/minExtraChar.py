@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def minExtraChar(self, s: str, dictionary: List[str]) -> int:
+    @staticmethod
+    def minExtraChar(s: str, dictionary: List[str]) -> int:
         # Initialize the maximum value to represent an upper bound
         max_val = len(s) + 1
 

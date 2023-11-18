@@ -1,5 +1,6 @@
 class Solution:
-    def numFactoredBinaryTrees(self, arr: List[int]) -> int:
+    @staticmethod
+    def numFactoredBinaryTrees(arr: List[int]) -> int:
         arr.sort()
         dp = {}
         for i in range(len(arr)):

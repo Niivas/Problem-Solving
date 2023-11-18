@@ -1,5 +1,6 @@
 class Solution:
-    def validateBinaryTreeNodes(self, n: int, leftChild: List[int], rightChild: List[int]) -> bool:
+    @staticmethod
+    def validateBinaryTreeNodes(n: int, leftChild: List[int], rightChild: List[int]) -> bool:
         root = 0
         children = set(leftChild + rightChild)
 

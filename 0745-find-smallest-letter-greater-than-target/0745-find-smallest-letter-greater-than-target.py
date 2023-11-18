@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def nextGreatestLetter(self, letters: List[str], target: str) -> str:
+    @staticmethod
+    def nextGreatestLetter(letters: List[str], target: str) -> str:
         # Initialize the lower and upper bounds for binary search
         low, high = 0, len(letters) - 1
 

@@ -2,7 +2,8 @@ from typing import List
 from functools import lru_cache
 
 class Solution:
-    def stoneGameII(self, piles: List[int]) -> int:
+    @staticmethod
+    def stoneGameII(piles: List[int]) -> int:
         # Calculate prefix sums
         prefix_sum = [piles[0]]
         for i in range(1, len(piles)):

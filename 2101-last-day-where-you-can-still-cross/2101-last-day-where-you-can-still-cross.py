@@ -2,7 +2,8 @@ import collections
 from typing import List
 
 class Solution:
-    def isPossibleToCross(self, row: int, col: int, cells: List[List[int]], day: int) -> bool:
+    @staticmethod
+    def isPossibleToCross(row: int, col: int, cells: List[List[int]], day: int) -> bool:
         # Initialize the grid with all cells set to 0
         grid = [[0] * col for _ in range(row)]
         queue = collections.deque()

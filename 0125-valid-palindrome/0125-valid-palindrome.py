@@ -1,5 +1,6 @@
 class Solution:
-    def isPalindrome(self, s: str) -> bool:
+    @staticmethod
+    def isPalindrome(s: str) -> bool:
         # Convert the string to lowercase
         s = s.lower()
 

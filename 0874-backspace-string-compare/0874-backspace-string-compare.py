@@ -1,5 +1,6 @@
 class Solution:
-    def backspaceCompare(self, s: str, t: str) -> bool:
+    @staticmethod
+    def backspaceCompare(s: str, t: str) -> bool:
         def buildString(string):
             stack = []
             for char in string:

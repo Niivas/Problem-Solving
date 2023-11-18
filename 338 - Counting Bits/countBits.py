@@ -13,7 +13,8 @@ class Solution:
         # Return the list containing the count of set bits for each number.
         return result
 
-    def isSetBit(self, n: int, k: int) -> bool:
+    @staticmethod
+    def isSetBit(n: int, k: int) -> bool:
         # Check if the k-th bit of the number n is set (1).
         return (n >> k & 1) == 1
 

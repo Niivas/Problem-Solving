@@ -1,5 +1,6 @@
 class Solution:
-    def isMonotonic(self, nums: List[int]) -> bool:
+    @staticmethod
+    def isMonotonic(nums: List[int]) -> bool:
         n = len(nums)
         if n <= 2:
             return True

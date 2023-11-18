@@ -1,5 +1,6 @@
 class Solution:
-    def countVowelPermutation(self, n: int) -> int:
+    @staticmethod
+    def countVowelPermutation(n: int) -> int:
         MOD = 10 ** 9 + 7  # Define a constant MOD for modulo arithmetic
 
         # Create a 2D list dp to store the number of valid strings of length i ending with each vowel

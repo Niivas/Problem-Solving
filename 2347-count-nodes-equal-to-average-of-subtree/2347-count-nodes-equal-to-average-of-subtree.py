@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def averageOfSubtree(self, root: Optional[TreeNode]) -> int:
+    @staticmethod
+    def averageOfSubtree(root: Optional[TreeNode]) -> int:
         def avgSum(node):
             if not node:
                 return 0

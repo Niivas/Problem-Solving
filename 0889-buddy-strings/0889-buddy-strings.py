@@ -1,7 +1,8 @@
 from collections import Counter
 
 class Solution:
-    def buddyStrings(self, s: str, goal: str) -> bool:
+    @staticmethod
+    def buddyStrings(s: str, goal: str) -> bool:
         # Check if s is equal to goal and if all characters in s are unique
         if s == goal and len(set(s)) == len(s):
             return False

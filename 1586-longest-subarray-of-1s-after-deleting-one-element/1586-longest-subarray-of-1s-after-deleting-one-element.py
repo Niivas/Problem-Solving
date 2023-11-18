@@ -1,5 +1,6 @@
 class Solution:
-    def longestSubarray(self, nums):
+    @staticmethod
+    def longestSubarray(nums):
         left_ptr = 0  # Pointer for the left end of the current subarray
         delete_index = -1  # Index of the previous zero element encountered
         longest_length = 0  # Length of the longest subarray

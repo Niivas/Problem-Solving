@@ -1,5 +1,6 @@
 class Solution:
-    def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:
+    @staticmethod
+    def maxConsecutiveAnswers(answerKey: str, k: int) -> int:
         # Initialize the search range
         low, high = 1, len(answerKey)
 

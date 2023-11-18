@@ -1,5 +1,6 @@
 class Solution:
-    def maxDotProduct(self, A, B):
+    @staticmethod
+    def maxDotProduct(A, B):
         n, m = len(A), len(B)
         dp = [[0] * (m) for i in range(n)]
         for i in range(n):

@@ -1,5 +1,6 @@
 class Solution:
-    def gameOfLife(self, board: List[List[int]]) -> None:
+    @staticmethod
+    def gameOfLife(board: List[List[int]]) -> None:
         # Define the relative positions of the neighbors
         neighbors = [[0, -1], [-1, -1], [-1, 0], [-1, 1], [0, 1], [1, 1], [1, 0], [1, -1]]
         rows, cols = len(board), len(board[0])

@@ -1,5 +1,6 @@
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    @staticmethod
+    def isValidSudoku(board: List[List[str]]) -> bool:
         # Initialize defaultdicts to keep track of seen digits in each row, column, and block
         row_map, column_map, block_map = defaultdict(set), defaultdict(set), defaultdict(set)
 

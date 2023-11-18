@@ -1,5 +1,6 @@
 class Solution:
-    def minimumTime(self, n: int, relations: List[List[int]], time: List[int]) -> int:
+    @staticmethod
+    def minimumTime(n: int, relations: List[List[int]], time: List[int]) -> int:
         graph = defaultdict(list)
         inDegree = [0] * n
         for u, v in relations:

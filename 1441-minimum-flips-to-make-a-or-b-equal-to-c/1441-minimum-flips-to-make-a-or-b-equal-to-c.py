@@ -1,5 +1,6 @@
 class Solution:
-    def minFlips(self, a: int, b: int, c: int) -> int:
+    @staticmethod
+    def minFlips(a: int, b: int, c: int) -> int:
         # Calculate the bitwise OR of a and b, then XOR it with c
         # to get the positions where a flip is required.
         flip_positions = (a | b) ^ c
