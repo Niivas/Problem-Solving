@@ -1,5 +1,6 @@
 class Solution:
-    def sortArrayByParity(self, nums: List[int]) -> List[int]:
+    @staticmethod
+    def sortArrayByParity(nums: List[int]) -> List[int]:
         left,right = 0,len(nums)-1
 
         while left<right:

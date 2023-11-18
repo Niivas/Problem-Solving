@@ -1,6 +1,7 @@
 from heapq import heappush, heappop
 class Solution:
-    def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
+    @staticmethod
+    def eliminateMaximum(dist: List[int], speed: List[int]) -> int:
         minHeap = []
         for i in range(len(dist)):
             heappush(minHeap, dist[i] / speed[i])

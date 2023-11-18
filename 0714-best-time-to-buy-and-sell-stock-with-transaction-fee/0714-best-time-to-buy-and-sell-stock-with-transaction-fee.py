@@ -1,5 +1,6 @@
 class Solution:
-    def maxProfit(self, prices: List[int], transaction_fee: int) -> int:
+    @staticmethod
+    def maxProfit(prices: List[int], transaction_fee: int) -> int:
         # Initialize current buying price to positive infinity
         current_buy_price = math.inf
 

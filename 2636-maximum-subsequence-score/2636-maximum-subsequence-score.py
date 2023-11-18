@@ -1,6 +1,7 @@
 import heapq
 class Solution:
-    def maxScore(self, A, B, k):
+    @staticmethod
+    def maxScore(A, B, k):
         total_score = 0  # Total score of selected elements
         max_score = 0  # Maximum score
         

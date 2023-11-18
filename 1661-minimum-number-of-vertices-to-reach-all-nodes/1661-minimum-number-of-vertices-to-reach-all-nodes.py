@@ -1,5 +1,6 @@
 class Solution:
-    def findSmallestSetOfVertices(self, n: int, edges: List[List[int]]) -> List[int]:
+    @staticmethod
+    def findSmallestSetOfVertices(n: int, edges: List[List[int]]) -> List[int]:
         # Create a set of all vertices initially
         vertices = set(range(n))
 

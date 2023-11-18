@@ -2,7 +2,8 @@ from typing import List
 from functools import lru_cache
 
 class Solution:
-    def stoneGameIII(self, stoneValue: List[int]) -> str:
+    @staticmethod
+    def stoneGameIII(stoneValue: List[int]) -> str:
         n = len(stoneValue)
 
         @lru_cache(None)

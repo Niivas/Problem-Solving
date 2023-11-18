@@ -1,5 +1,6 @@
 class Solution:
-    def majorityElement(self, nums):
+    @staticmethod
+    def majorityElement(nums):
         if not nums:
             return []
         count1, count2, candidate1, candidate2 = 0, 0, 0, 1

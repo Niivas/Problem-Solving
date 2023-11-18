@@ -1,5 +1,6 @@
 class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+    @staticmethod
+    def spiralOrder(matrix: List[List[int]]) -> List[int]:
         result = []
         if not matrix: # handle empty matrix
             return result

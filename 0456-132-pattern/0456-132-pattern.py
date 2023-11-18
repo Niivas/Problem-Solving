@@ -1,5 +1,6 @@
 class Solution:
-    def find132pattern(self, nums: List[int]) -> bool:
+    @staticmethod
+    def find132pattern(nums: List[int]) -> bool:
         # n: number of elements in the array
         # smallest_element_seen_so_far: smallest element seen so far
         # stack_of_greater_elements: stack of elements that are greater than smallest_element_seen_so_far

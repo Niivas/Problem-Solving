@@ -2,7 +2,8 @@ import sys
 
 
 class Solution:
-    def findMedianSortedArrays(self, nums1, nums2):
+    @staticmethod
+    def findMedianSortedArrays(nums1, nums2):
         # Get lengths of the input arrays
         N1, N2 = len(nums1), len(nums2)
 

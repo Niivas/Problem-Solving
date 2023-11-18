@@ -2,7 +2,8 @@ from typing import List
 
 
 class Solution:
-    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+    @staticmethod
+    def fullJustify(words: List[str], maxWidth: int) -> List[str]:
         res = []
 
         cur_wlist  = []

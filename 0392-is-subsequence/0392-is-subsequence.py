@@ -1,5 +1,6 @@
 class Solution:
-    def isSubsequence(self, s: str, t: str) -> bool:
+    @staticmethod
+    def isSubsequence(s: str, t: str) -> bool:
         lenS = len(s)
         lenT = len(t)
         if lenS>lenT:

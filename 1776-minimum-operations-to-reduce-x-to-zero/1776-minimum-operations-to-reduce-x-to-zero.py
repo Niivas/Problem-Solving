@@ -1,5 +1,6 @@
 class Solution:
-    def minOperations(self, nums: List[int], x: int) -> int:
+    @staticmethod
+    def minOperations(nums: List[int], x: int) -> int:
         target = sum(nums) - x
         curr_sum, max_len = 0, 0
         start_idx = 0

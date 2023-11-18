@@ -1,5 +1,6 @@
 class Solution:
-    def countHomogenous(self, s: str) -> int:
+    @staticmethod
+    def countHomogenous(s: str) -> int:
         n = len(s)
         i,j = 0,0
         ans = 0

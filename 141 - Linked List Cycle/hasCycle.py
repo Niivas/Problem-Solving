@@ -9,7 +9,8 @@ class ListNode:
 
 
 class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
+    @staticmethod
+    def hasCycle(head: Optional[ListNode]) -> bool:
         # check if the linked list is empty or has only one node
         if not head or not head.next:
             return False

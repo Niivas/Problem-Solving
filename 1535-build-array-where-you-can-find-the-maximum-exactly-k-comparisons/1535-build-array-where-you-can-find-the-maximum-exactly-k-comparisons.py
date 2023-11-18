@@ -1,5 +1,6 @@
 class Solution:
-    def numOfArrays(self, n: int, m: int, k: int) -> int:
+    @staticmethod
+    def numOfArrays(n: int, m: int, k: int) -> int:
         # dp[a][b][c] = dp[a-1][x][c-1] (1 <= x < b) + dp[a-1][b][c] * b
         dp = [[[0 for _ in range(k+1)] for _ in range(m+1)] for _ in range(n+1)]
         mod = 10 ** 9 + 7

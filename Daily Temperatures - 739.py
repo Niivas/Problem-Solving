@@ -1,6 +1,7 @@
 from typing import List
 class Solution:
-    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+    @staticmethod
+    def dailyTemperatures(temperatures: List[int]) -> List[int]:
         n = len(temperatures)
         stack = [(temperatures[-1], n-1)]  # Initialize stack with last temperature and its index
         ans = [0] * n  # Initialize answer array with zeros

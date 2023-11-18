@@ -4,7 +4,8 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    @staticmethod
+    def swapPairs(head: Optional[ListNode]) -> Optional[ListNode]:
         # Check if the linked list is empty or has only one node
         if not head or not head.next:
             return head

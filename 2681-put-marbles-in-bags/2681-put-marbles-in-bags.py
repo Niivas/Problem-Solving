@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def putMarbles(self, weights: List[int], target_pairs: int) -> int:
+    @staticmethod
+    def putMarbles(weights: List[int], target_pairs: int) -> int:
         # Calculate the number of weights
         num_weights = len(weights)
 

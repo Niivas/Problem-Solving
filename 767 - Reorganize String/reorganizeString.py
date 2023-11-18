@@ -1,7 +1,8 @@
 from collections import Counter
 import heapq
 class Solution:
-    def reorganizeString(self, s: str) -> str:
+    @staticmethod
+    def reorganizeString(s: str) -> str:
         counter = Counter(s)
         chars = [(-counter[x], x) for x in counter]
 

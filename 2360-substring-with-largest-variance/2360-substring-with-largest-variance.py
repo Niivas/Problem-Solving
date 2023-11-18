@@ -1,5 +1,6 @@
 class Solution:
-    def largestVariance(self, s: str) -> int:
+    @staticmethod
+    def largestVariance(s: str) -> int:
         count1 = 0
         count2 = 0
         max_variance = 0

@@ -1,5 +1,6 @@
 class Solution:
-    def constrainedSubsetSum(self, nums: List[int], k: int) -> int:
+    @staticmethod
+    def constrainedSubsetSum(nums: List[int], k: int) -> int:
         dq = deque()
         for i in range(len(nums)):
             nums[i] += nums[dq[0]] if dq else 0

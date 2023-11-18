@@ -1,6 +1,7 @@
 class Solution:
     from collections import defaultdict, deque
-    def numBusesToDestination(self, routes: List[List[int]], source: int, target: int) -> int:
+    @staticmethod
+    def numBusesToDestination(routes: List[List[int]], source: int, target: int) -> int:
         # Base case
         if source == target:
             return 0

@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+    @staticmethod
+    def findMode(root: Optional[TreeNode]) -> List[int]:
         # 1. Initialize a dictionary to store the frequency of each node
         freq = {}
 

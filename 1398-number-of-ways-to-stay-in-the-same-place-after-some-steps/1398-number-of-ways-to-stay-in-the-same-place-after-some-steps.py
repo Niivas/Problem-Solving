@@ -1,5 +1,6 @@
 class Solution:
-    def numWays(self, steps: int, arrLen: int) -> int:
+    @staticmethod
+    def numWays(steps: int, arrLen: int) -> int:
         m = steps
         n = min(steps // 2 + 1, arrLen)
 

@@ -1,5 +1,6 @@
 class Solution:
-    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+    @staticmethod
+    def minSubArrayLen(target: int, nums: List[int]) -> int:
         # Initialize variables for left index, right index, and current sum
         left, right, curSum = 0, 0, 0
         # Initialize variable for minimum subarray length, set to positive infinity

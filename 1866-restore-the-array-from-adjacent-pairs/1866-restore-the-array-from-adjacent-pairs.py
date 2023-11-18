@@ -1,6 +1,7 @@
 class Solution:
     
-    def restoreArray(self, pairs: List[List[int]]) -> List[int]:
+    @staticmethod
+    def restoreArray(pairs: List[List[int]]) -> List[int]:
         graph = defaultdict(list)
         for u, v in pairs:
             graph[u].append(v)

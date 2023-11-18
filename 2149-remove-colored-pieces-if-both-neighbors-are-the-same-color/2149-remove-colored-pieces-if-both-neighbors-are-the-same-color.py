@@ -1,5 +1,6 @@
 class Solution:
-    def winnerOfGame(self, s: str) -> bool:
+    @staticmethod
+    def winnerOfGame(s: str) -> bool:
         
         a = b = 0
         
