@@ -21,15 +21,15 @@ class Solution:
         self.visited = set()  # Initialize the set of visited nodes
         
         # Build the graph
-        for i in range(len(equations)):
-            if equations[i][0] not in self.graph:
-                self.graph[equations[i][0]] = []
-            if equations[i][1] not in self.graph:
-                self.graph[equations[i][1]] = []
+        for i, item in enumerate(equations):
+            if item[0] not in self.graph:
+                self.graph[item[0]] = []
+            if item[1] not in self.graph:
+                self.graph[item[1]] = []
             
             # Add two entries for each equation and value
-            self.graph[equations[i][0]].append((equations[i][1], 1 / values[i]))
-            self.graph[equations[i][1]].append((equations[i][0], values[i]))
+            self.graph[item[0]].append((item[1], 1 / values[i]))
+            self.graph[item[1]].append((item[0], values[i]))
         
         v = []  # Initialize the result list
         

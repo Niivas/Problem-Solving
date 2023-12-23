@@ -28,7 +28,7 @@ class Solution:
                 self.isCyclic(adj_list, node, visited, recursion_stack)
 
         eventual_safe_nodes = []
-        for node in range(len(recursion_stack)):
-            if not recursion_stack[node]:
+        for node, item in enumerate(recursion_stack):
+            if not item:
                 eventual_safe_nodes.append(node)
         return eventual_safe_nodes
