@@ -13,6 +13,6 @@ class Solution:
             if i.isalpha() or i.isalnum():
                 # If it is, add it to the result string
                 res += i
-        
+
         # Check if the result string is equal to its reverse
         return res == res[::-1]

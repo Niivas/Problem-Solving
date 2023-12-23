@@ -1,7 +1,7 @@
 class Solution:
     @staticmethod
     def maximumScore(nums: List[int], k: int) -> int:
-        
+
         n = len(nums)
         left, right = k, k
         result = nums[k]

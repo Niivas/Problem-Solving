@@ -1,7 +1,7 @@
 class Solution:
     @staticmethod
     def longestPalindrome(s: str) -> str:
-        
+
         def expand(string, start, end):
             temp = ""
             length = len(string)

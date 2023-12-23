@@ -14,7 +14,7 @@ class Solution:
             # Check if the current cell is out of bounds or violates the height constraint
             if x < 0 or x >= rows or y < 0 or y >= cols or prev_height >= grid[x][y]:
                 return 0
-            
+
             # Check if the number of paths for this cell has already been calculated
             if memo[x][y] != -1:
                 return memo[x][y]

@@ -12,11 +12,11 @@ class Solution:
             prob = success_probabilities[i]
             graph[src].append((dest, prob))
             graph[dest].append((src, prob))
-        
+
         # Initialize an array to store the maximum probabilities of reaching each node
         max_probabilities = [0.0] * num_nodes
         max_probabilities[start_node] = 1.0
-        
+
         # Use a queue for breadth-first search
         queue = deque([start_node])
 
@@ -32,6 +32,6 @@ class Solution:
                 if new_prob > max_probabilities[neighbor]:
                     max_probabilities[neighbor] = new_prob
                     queue.append(neighbor)
-        
+
         # Return the maximum probability of reaching the end node from the start node
         return max_probabilities[end_node]
