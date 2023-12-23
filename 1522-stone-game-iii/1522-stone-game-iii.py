@@ -34,6 +34,6 @@ class Solution:
         # Determine the winner based on the score
         if score > 0:
             return "Alice"
-        elif score < 0:
+        if score < 0:
             return "Bob"
         return "Tie"
