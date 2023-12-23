@@ -9,5 +9,5 @@ class Solution:
         ans = 0
         for idxs in hm.values():
             ans += (len(idxs)*(len(idxs)-1))//2
-        
+
         return ans
