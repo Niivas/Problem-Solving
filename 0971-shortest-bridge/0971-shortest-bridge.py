@@ -32,7 +32,7 @@ class Solution:
                         if 0 <= x < m and 0 <= y < n:
                             if A[x][y] == 1:
                                 return step
-                            elif A[x][y] ==0:
+                            if A[x][y] ==0:
                                 A[x][y] = -1
                                 new.append((x,y))
                 step += 1

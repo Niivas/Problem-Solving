@@ -14,7 +14,7 @@ class Solution:
                 return [left + 1, right + 1]
             
             # If the current sum is greater than the target, move the right pointer to the left
-            elif curSum > target:
+            if curSum > target:
                 right -= 1
             
             # If the current sum is less than the target, move the left pointer to the right

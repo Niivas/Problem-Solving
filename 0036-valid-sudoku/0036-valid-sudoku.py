@@ -12,9 +12,8 @@ class Solution:
                     # Check if the digit is already seen in the same row, column, or block
                     if (val in row_map[i] or val in column_map[j] or val in block_map[id]):
                         return False  # If the digit is already seen, the board is invalid
-                    else:
-                        row_map[i].add(val)  # Add the digit to the row_map
-                        column_map[j].add(val)  # Add the digit to the column_map
-                        block_map[id].add(val)  # Add the digit to the block_map
+                    row_map[i].add(val)  # Add the digit to the row_map
+                    column_map[j].add(val)  # Add the digit to the column_map
+                    block_map[id].add(val)  # Add the digit to the block_map
 
         return True  # If all cells are checked and no duplicates were found, the board is valid

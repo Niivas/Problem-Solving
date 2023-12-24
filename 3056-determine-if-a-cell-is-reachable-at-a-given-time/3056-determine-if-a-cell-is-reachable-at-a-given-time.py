@@ -7,6 +7,5 @@ class Solution:
         if min_dist == 0: 
             if t == 1:
                 return False
-            else:
-                return True
+            return True
         return t >= min_dist
