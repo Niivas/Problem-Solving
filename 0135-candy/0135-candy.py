@@ -3,7 +3,7 @@ class Solution:
     def candy(ratings):
         # Get the number of children
         n = len(ratings)
-        
+
         # Create an array to store the number of candies for each child, initialize all with 1
         candies_array = [1] * n
 
