@@ -12,7 +12,7 @@ class Solution(object):
             if d > dist[r][c]: continue  # this is an outdated version -> skip it
             if r == m - 1 and c == n - 1:
                 return d  # Reach to bottom right
-            
+
             for i in range(4):
                 nr, nc = r + DIR[i], c + DIR[i+1]
                 if 0 <= nr < m and 0 <= nc < n:

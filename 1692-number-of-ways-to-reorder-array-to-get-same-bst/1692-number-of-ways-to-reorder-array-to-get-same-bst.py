@@ -5,10 +5,10 @@ class Solution:
     def numOfWays(nums: List[int]) -> int:
         # Calculate the length of the input list
         n = len(nums)
-        
+
         # Create a 2D table to store Pascal's triangle values
         pascal_table = [[0 for _ in range(n)] for _ in range(n)]
-        
+
         # Define the modulo value
         mod = (10 ** 9 + 7)
 

@@ -10,4 +10,4 @@ class Solution:
                 stack += targets[stack[-1]].pop(),
             route += stack.pop(),
         return route[::-1]
-        
+

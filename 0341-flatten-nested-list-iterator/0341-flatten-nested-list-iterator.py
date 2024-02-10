@@ -29,7 +29,7 @@ class NestedIterator(object):
         nestedList, i = self.stack[-1]
         self.stack[-1][1] += 1
         return nestedList[i].getInteger()
-            
+
     def hasNext(self):
         s = self.stack
         while s:
@@ -43,7 +43,7 @@ class NestedIterator(object):
                 s[-1][1] += 1
                 s.append([x.getList(), 0])
         return False
-         
+
 
 # Your NestedIterator object will be instantiated and called as such:
 # i, v = NestedIterator(nestedList), []

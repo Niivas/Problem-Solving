@@ -18,6 +18,6 @@ class Solution:
                 maxProduct = max(maxProduct,product)
             # set dp[i] to maxProduct, which is the maximum product for i
             dp[i]=maxProduct
-        
+
         # return dp[n], which is the final answer
         return dp[n]
