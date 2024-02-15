@@ -1,7 +1,8 @@
 import heapq
 
 class Solution:
-    def totalCost(self, costs, k, candidates):
+    @staticmethod
+    def totalCost(costs, k, candidates):
         left = 0  # left index of the costs list
         right = len(costs) - 1  # right index of the costs list
         left_pq = []  # priority queue to store costs from the left

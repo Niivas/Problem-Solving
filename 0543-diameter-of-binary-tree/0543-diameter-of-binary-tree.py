@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution(object):
-    def diameterOfBinaryTree(self, root):
+    @staticmethod
+    def diameterOfBinaryTree(root):
         """
         :type root: TreeNode
         :rtype: int

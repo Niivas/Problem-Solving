@@ -1,5 +1,6 @@
 class Solution:
-    def evalRPN(self, tokens: List[str]) -> int:
+    @staticmethod
+    def evalRPN(tokens: List[str]) -> int:
         # Initialize an empty stack and a variable to keep track of the current index
         stack = []
         cur = 0

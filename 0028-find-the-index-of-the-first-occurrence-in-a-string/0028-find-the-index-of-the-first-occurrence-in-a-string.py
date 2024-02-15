@@ -1,5 +1,6 @@
 class Solution:
-    def strStr(self,haystack: str, needle: str) -> int:
+    @staticmethod
+    def strStr(haystack: str, needle: str) -> int:
         # check if needle is empty
         if not needle:
             return 0

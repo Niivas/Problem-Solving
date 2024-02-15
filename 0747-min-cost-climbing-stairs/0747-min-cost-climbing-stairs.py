@@ -1,5 +1,6 @@
 class Solution:
-    def minCostClimbingStairs(self, cost: List[int]) -> int:
+    @staticmethod
+    def minCostClimbingStairs(cost: List[int]) -> int:
         # Initialize variables to represent the cost of reaching the first and second stairs.
         a, b = cost[0], cost[1]
         # Get the total number of stairs.

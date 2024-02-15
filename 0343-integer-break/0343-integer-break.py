@@ -1,5 +1,6 @@
 class Solution:
-    def integerBreak(self, n: int) -> int:
+    @staticmethod
+    def integerBreak(n: int) -> int:
         # create a list of length n+1 to store the maximum product for each subproblem
         dp = [0]*(n+1)
         # base cases: dp[1] = dp[2] = 1

@@ -10,9 +10,9 @@ class MyHashMap:
             self.table[idx] = [[key,value]]
         else:
             keyFound = False
-            for i in range(len(self.table[idx])):
-                if self.table[idx][i][0] == key:
-                    self.table[idx][i][1] = value
+            for i, item in enumerate(self.table[idx]):
+                if item[0] == key:
+                    item[1] = value
                     keyFound = True
             if not keyFound:
                 self.table[idx].append([key,value])

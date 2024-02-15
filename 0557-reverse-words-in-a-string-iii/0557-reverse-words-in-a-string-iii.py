@@ -1,3 +1,4 @@
 class Solution:
-    def reverseWords(self, s: str) -> str:
+    @staticmethod
+    def reverseWords(s: str) -> str:
         return " ".join(list(map(lambda x:x[::-1],s.split(" "))))

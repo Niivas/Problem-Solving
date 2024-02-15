@@ -1,5 +1,6 @@
 class Solution:
-    def candy(self, ratings):
+    @staticmethod
+    def candy(ratings):
         # Get the number of children
         n = len(ratings)
         

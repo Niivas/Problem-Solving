@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def countNegatives(self, grid: List[List[int]]) -> int:
+    @staticmethod
+    def countNegatives(grid: List[List[int]]) -> int:
         # Get the number of rows and columns in the grid
         num_rows = len(grid)
         num_cols = len(grid[0])

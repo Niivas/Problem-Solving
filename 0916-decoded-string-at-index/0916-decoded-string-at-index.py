@@ -1,5 +1,6 @@
 class Solution:
-    def decodeAtIndex(self, s: str, k: int) -> str:
+    @staticmethod
+    def decodeAtIndex(s: str, k: int) -> str:
         N = 0
         for i, c in enumerate(s):
             N = N * int(c) if c.isdigit() else N + 1

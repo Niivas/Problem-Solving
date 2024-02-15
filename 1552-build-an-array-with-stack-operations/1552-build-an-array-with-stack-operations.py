@@ -1,5 +1,6 @@
 class Solution:
-    def buildArray(self, target: List[int], n: int) -> List[str]:
+    @staticmethod
+    def buildArray(target: List[int], n: int) -> List[str]:
         res = []
         i = 1
         for num in target:

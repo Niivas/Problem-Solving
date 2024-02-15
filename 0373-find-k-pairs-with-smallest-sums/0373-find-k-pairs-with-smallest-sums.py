@@ -1,5 +1,6 @@
 class Solution:
-    def kSmallestPairs(self, nums1, nums2, k):
+    @staticmethod
+    def kSmallestPairs(nums1, nums2, k):
         resV = []  # Result list to store the pairs
         pq = []  # Priority queue to store pairs with smallest sums, sorted by the sum
 

@@ -1,5 +1,6 @@
 class Solution:
-    def champagneTower(self, poured, query_row, query_glass):
+    @staticmethod
+    def champagneTower(poured, query_row, query_glass):
         res = [poured] + [0] * query_row
         for row in range(1, query_row + 1):
             for i in range(row, -1, -1):

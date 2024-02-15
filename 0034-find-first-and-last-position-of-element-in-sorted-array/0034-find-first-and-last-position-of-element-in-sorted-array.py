@@ -1,5 +1,6 @@
 class Solution:
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
+    @staticmethod
+    def searchRange(nums: List[int], target: int) -> List[int]:
         
         def search(x):
             lo, hi = 0, len(nums)           

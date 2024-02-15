@@ -1,5 +1,6 @@
 class Solution:
-    def bestClosingTime(self, customers: str) -> int:
+    @staticmethod
+    def bestClosingTime(customers: str) -> int:
         ans = 0
         left_Ns = customers.count('N')
         right_Ys = 0

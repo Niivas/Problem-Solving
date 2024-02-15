@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def numOfWays(self, nums: List[int]) -> int:
+    @staticmethod
+    def numOfWays(nums: List[int]) -> int:
         # Calculate the length of the input list
         n = len(nums)
         

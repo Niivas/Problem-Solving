@@ -8,7 +8,8 @@ class TreeNode:
         self.right = right
 
 class Solution:
-    def maxLevelSum(self, root: Optional[TreeNode]) -> int:
+    @staticmethod
+    def maxLevelSum(root: Optional[TreeNode]) -> int:
         queue = deque([root])  # Initialize a queue with the root node
         max_sum = -math.inf  # Initialize the maximum sum to negative infinity
         max_level = 0  # Initialize the level with the maximum sum

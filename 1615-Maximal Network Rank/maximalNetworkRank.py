@@ -2,7 +2,8 @@ from collections import defaultdict
 from typing import List
 
 class Solution:
-    def maximalNetworkRank(self, n: int, roads: List[List[int]]) -> int:
+    @staticmethod
+    def maximalNetworkRank(n: int, roads: List[List[int]]) -> int:
         # Create a defaultdict to represent the graph where each node maps to a set of connected nodes
         graph = defaultdict(set)
 

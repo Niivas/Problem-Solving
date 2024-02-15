@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def longestArithSeqLength(self, nums: List[int]) -> int:
+    @staticmethod
+    def longestArithSeqLength(nums: List[int]) -> int:
         n = len(nums)
         
         # If the length of the list is less than or equal to 2, return the length itself

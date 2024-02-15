@@ -1,17 +1,18 @@
 class Solution:
-    def removeDuplicateLetters(self, s: str) -> str:   
+    @staticmethod
+    def removeDuplicateLetters(s: str) -> str:   
         last_occ = {}
         stack = []
         visited = set()
 
-        for i in range(len(s)):
-            last_occ[s[i]] = i
+        for i, item in enumerate(s):
+            last_occ[item] = i
 
-        for i in range(len(s)):
-            if s[i] not in visited:
-                while (stack and stack[-1] > s[i] and last_occ[stack[-1]] > i):
+        for i, item in enumerate(s):
+            if item not in visited:
+                while (stack and stack[-1] > item and last_occ[stack[-1]] > i):
                     visited.remove(stack.pop())
-                stack.append(s[i])
-                visited.add(s[i])
+                stack.append(item)
+                visited.add(item)
 
         return ''.join(stack)

@@ -2,7 +2,8 @@ from typing import List
 import collections
 
 class Solution:
-    def shortestPathAllKeys(self, grid: List[str]) -> int:
+    @staticmethod
+    def shortestPathAllKeys(grid: List[str]) -> int:
         m, n = len(grid), len(grid[0])
         queue = collections.deque()
         

@@ -1,9 +1,10 @@
 from heapq import heappush, heappop
 class Solution:
-    def eliminateMaximum(self, dist: List[int], speed: List[int]) -> int:
+    @staticmethod
+    def eliminateMaximum(dist: List[int], speed: List[int]) -> int:
         minHeap = []
-        for i in range(len(dist)):
-            heappush(minHeap, dist[i] / speed[i])
+        for i, item in enumerate(dist):
+            heappush(minHeap, item / speed[i])
         count = 0
         while minHeap:
             if count >= heappop(minHeap):

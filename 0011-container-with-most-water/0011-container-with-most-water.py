@@ -1,5 +1,6 @@
 class Solution:
-    def maxArea(self, H: List[int]) -> int:
+    @staticmethod
+    def maxArea(H: List[int]) -> int:
         # initialize the maximum area seen so far and the two pointers
         ans, i, j = 0, 0, len(H)-1
         

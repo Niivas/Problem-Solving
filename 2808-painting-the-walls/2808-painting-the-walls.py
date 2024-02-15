@@ -1,5 +1,6 @@
 class Solution:
-    def paintWalls(self, cost: List[int], time: List[int]) -> int:
+    @staticmethod
+    def paintWalls(cost: List[int], time: List[int]) -> int:
         postfix_times = time[:]
 
         for i in range(len(postfix_times) - 2, -1, -1):

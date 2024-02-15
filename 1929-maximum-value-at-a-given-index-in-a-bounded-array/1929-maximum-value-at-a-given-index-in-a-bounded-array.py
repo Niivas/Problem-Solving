@@ -1,6 +1,7 @@
 import math
 class Solution:
-    def maxValue(self, n: int, index: int, maxSum: int) -> int:
+    @staticmethod
+    def maxValue(n: int, index: int, maxSum: int) -> int:
         maxSum -= n              # remove the contributions from all the 1 in each element.
 		                         # We will add 1 back to the final height later
         if index < n // 2:       # make the index closer to the right boundary

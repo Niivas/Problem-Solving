@@ -1,5 +1,6 @@
 class Solution:
-    def findItinerary(self, tickets):
+    @staticmethod
+    def findItinerary(tickets):
         targets = collections.defaultdict(list)
         for a, b in sorted(tickets)[::-1]:
             targets[a] += b,

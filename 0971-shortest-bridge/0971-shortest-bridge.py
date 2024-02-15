@@ -1,5 +1,6 @@
 class Solution:
-        def shortestBridge(self, A: List[List[int]]) -> int:
+        @staticmethod
+        def shortestBridge(A: List[List[int]]) -> int:
             bound= set()
             dire = [(1,0),(-1,0),(0,1),(0,-1)]
             m, n = len(A), len(A[0])
@@ -31,7 +32,7 @@ class Solution:
                         if 0 <= x < m and 0 <= y < n:
                             if A[x][y] == 1:
                                 return step
-                            elif A[x][y] ==0:
+                            if A[x][y] ==0:
                                 A[x][y] = -1
                                 new.append((x,y))
                 step += 1

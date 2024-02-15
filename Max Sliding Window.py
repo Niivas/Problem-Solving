@@ -1,6 +1,7 @@
 from typing import List
 class Solution:
-    def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+    @staticmethod
+    def maxSlidingWindow(nums: List[int], k: int) -> List[int]:
         from collections import deque
         q = deque() # stores *indices*
         res = []

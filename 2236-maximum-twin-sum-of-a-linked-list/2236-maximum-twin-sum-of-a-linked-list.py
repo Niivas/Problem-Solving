@@ -4,7 +4,8 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def pairSum(self, head: Optional[ListNode]) -> int:
+    @staticmethod
+    def pairSum(head: Optional[ListNode]) -> int:
         ans = -math.inf  # Initialize ans with negative infinity
 
         slow, fast = head, head.next  # Initialize slow and fast pointers

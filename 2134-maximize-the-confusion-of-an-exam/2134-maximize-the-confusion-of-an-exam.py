@@ -1,5 +1,6 @@
 class Solution:
-    def maxConsecutiveAnswers(self, answerKey: str, k: int) -> int:
+    @staticmethod
+    def maxConsecutiveAnswers(answerKey: str, k: int) -> int:
         # Initialize the search range
         low, high = 1, len(answerKey)
 
@@ -25,14 +26,13 @@ class Solution:
                 # Check if the current subsequence satisfies the condition
                 if min(t_count, f_count) <= k:
                     return True
+                # Adjust counts and move the window
+                if answerKey[left] == 'T':
+                    t_count -= 1
                 else:
-                    # Adjust counts and move the window
-                    if answerKey[left] == 'T':
-                        t_count -= 1
-                    else:
-                        f_count -= 1
-                    left += 1
-                    right += 1
+                    f_count -= 1
+                left += 1
+                right += 1
 
             return False
 

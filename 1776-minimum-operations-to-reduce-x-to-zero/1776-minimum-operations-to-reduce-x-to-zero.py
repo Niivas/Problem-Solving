@@ -1,11 +1,12 @@
 class Solution:
-    def minOperations(self, nums: List[int], x: int) -> int:
+    @staticmethod
+    def minOperations(nums: List[int], x: int) -> int:
         target = sum(nums) - x
         curr_sum, max_len = 0, 0
         start_idx = 0
         found = False
-        for end_idx in range(len(nums)):
-            curr_sum += nums[end_idx]
+        for end_idx, item in enumerate(nums):
+            curr_sum += item
             while start_idx <= end_idx and curr_sum > target:
                 curr_sum -= nums[start_idx]
                 start_idx += 1

@@ -5,7 +5,8 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def largestValues(self, root: Optional[TreeNode]) -> List[int]:
+    @staticmethod
+    def largestValues(root: Optional[TreeNode]) -> List[int]:
         if not root:
             return []
         level_nodes = deque([root])

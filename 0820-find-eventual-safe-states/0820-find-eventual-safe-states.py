@@ -5,7 +5,7 @@ class Solution:
         for neighbor in adj_list[src]:
             if not visited[neighbor] and self.isCyclic(adj_list, neighbor, visited, recursion_stack):
                 return True
-            elif recursion_stack[neighbor]:
+            if recursion_stack[neighbor]:
                 return True
         recursion_stack[src] = False
         return False
@@ -28,7 +28,7 @@ class Solution:
                 self.isCyclic(adj_list, node, visited, recursion_stack)
 
         eventual_safe_nodes = []
-        for node in range(len(recursion_stack)):
-            if not recursion_stack[node]:
+        for node, item in enumerate(recursion_stack):
+            if not item:
                 eventual_safe_nodes.append(node)
         return eventual_safe_nodes

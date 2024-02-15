@@ -2,7 +2,8 @@ from collections import defaultdict
 from typing import List
 
 class Solution:
-    def equalPairs(self, grid: List[List[int]]) -> int:
+    @staticmethod
+    def equalPairs(grid: List[List[int]]) -> int:
         # Create a dictionary to store the count of rows
         row_counts = defaultdict(int)
         num_rows = len(grid)

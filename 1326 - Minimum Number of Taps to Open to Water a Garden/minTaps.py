@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def minTaps(self, n: int, ranges: List[int]) -> int:
+    @staticmethod
+    def minTaps(n: int, ranges: List[int]) -> int:
         # Initialize an array to represent the maximum rightmost coverage of each tap location
         sprinkleRanges = [-1] * n
 

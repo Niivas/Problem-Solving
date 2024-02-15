@@ -1,7 +1,8 @@
 from typing import List
 
 class Solution:
-    def getAverages(self, nums: List[int], k: int) -> List[int]:
+    @staticmethod
+    def getAverages(nums: List[int], k: int) -> List[int]:
         n = len(nums)
         
         # If the length of 'nums' is less than 2k + 1, return a list of -1's
